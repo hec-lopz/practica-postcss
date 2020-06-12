@@ -1,0 +1,27 @@
+/********************\
+*   Logo e Iconos
+\*******************/
+
+.logo{
+    font-size: 34px;
+    font-family: $logo-font;
+    &__left{
+        color: $white-color;
+    }
+    &__right{
+        color: $red-color;
+    }
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white-color;
+    img {
+        width: 93%;
+        height: 100%;
+        object-fit: cover;
+        position: left  ;
+    }
+}

@@ -1,0 +1,35 @@
+/********************\
+*   Globales
+\*******************/
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Open+Sans:wght@300;400;700&display=swap');
+
+%res-box{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    @extend %res-box;
+  }
+body {
+    @extend %res-box;
+    font-family: $main-font;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+h1, h2, h3, p, figure{
+    @extend %res-box;
+}

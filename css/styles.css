@@ -1,0 +1,162 @@
+/********************\
+*   Globales
+\*******************/
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&family=Open+Sans:wght@300;400;700&display=swap");
+html, body, h1, h2, h3, p, figure {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+/********************\
+*   Grid Layout
+\*******************/
+.grid-container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  -ms-grid-rows: 70px 1fr;
+      grid-template-rows: 70px 1fr;
+      grid-template-areas: "logo main" "nav main";
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.playlists {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 500px 1fr;
+      grid-template-rows: 500px 1fr;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+}
+
+/********************\
+*   Containers
+\*******************/
+.logo {
+  background-color: #151b31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+}
+
+.playlists {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #151b31;
+  color: white;
+}
+
+.playlists ol {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin-left: 0;
+  height: 90%;
+  overflow: auto;
+}
+
+.playlists ol li {
+  padding-left: 10px;
+}
+
+.playlists ol li:marker {
+  padding-left: 50px;
+}
+
+.playlists ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlists ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.playlists ul li:last-child {
+  margin-bottom: 0;
+}
+
+.playlists ul li span {
+  margin-left: 10px;
+}
+
+/********************\
+*   Logo e Iconos
+\*******************/
+.logo {
+  font-size: 34px;
+  font-family: "MuseoModerno", cursive;
+}
+
+.logo__left {
+  color: white;
+}
+
+.logo__right {
+  color: #ff0b0d;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.user-icon img {
+  width: 93%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: left;
+}
+/*# sourceMappingURL=styles.css.map */
