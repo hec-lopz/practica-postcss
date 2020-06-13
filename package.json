@@ -1,0 +1,22 @@
+{
+  "name": "platzi-video",
+  "version": "1.0.0",
+  "description": "Proyecto Practica de Post CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hec-lopz/practica-postcss.git"
+  },
+  "author": "Hector Lopez",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/hec-lopz/practica-postcss/issues"
+  },
+  "homepage": "https://github.com/hec-lopz/practica-postcss#readme",
+  "dependencies": {
+    "postcss-cli": "^7.1.1"
+  }
+}
