@@ -15,17 +15,17 @@ html {
 body {
     @extend %res-box;
     font-family: $main-font;
-    position: fixed;
+    /*position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 0;*/
   }
 *, *:before, *:after {
     box-sizing: inherit;
   }
 
-a {
+a, input{
     text-decoration: none;
     font-size: inherit;
     color: inherit;
